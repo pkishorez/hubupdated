@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {Layout, Section} from 'classui/Components/Layout';
 import {Form} from 'classui/Components/Form';
-import {username, Socket} from './Socket';
+import {userName, Socket} from './Socket';
 
 interface IProps {};
 interface IState {
@@ -54,7 +54,7 @@ class Chat extends React.Component<IProps, IState> {
 		this.input.value = "";
 		Socket.emit("chat", {
 			action: "message",
-			from: username,
+			from: userName,
 			message: val
 		});
 	}

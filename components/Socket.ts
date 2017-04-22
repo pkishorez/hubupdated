@@ -2,13 +2,20 @@ import * as io from 'socket.io-client';
 
 // Setup socket and return socket.
 let Socket = io();
-let username;
-Socket.emit("setUsername", username=prompt("Enter your name."));
+
+let userName = localStorage.getItem("Name");
+
+userName || localStorage.setItem('Name', userName = prompt("Please enter your name : "));
+
+document.title = userName;
+
+Socket.emit("setUsername", userName=prompt("Enter your name."));
 Socket.on("setUsername", function(error) {
-	username = prompt("Invalid : "+error+". Enter another one : ");
-	Socket.emit("setUsername", username);
+	userName = prompt("Invalid : "+error+". Enter another one : ");
+	localStorage.setItem('Name', userName);
+	Socket.emit("setUsername", userName);
 });
 export {
-	username,
+	userName,
 	Socket
 };
