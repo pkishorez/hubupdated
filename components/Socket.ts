@@ -9,7 +9,7 @@ userName || localStorage.setItem('Name', userName = prompt("Please enter your na
 
 document.title = userName;
 
-Socket.emit("setUsername", userName=prompt("Enter your name."));
+Socket.emit("setUsername", userName);
 Socket.on("setUsername", function(error) {
 	userName = prompt("Invalid : "+error+". Enter another one : ");
 	localStorage.setItem('Name', userName);
