@@ -19,6 +19,11 @@ class Chat extends React.Component<IProps, IState> {
 		this.sendMessage = this.sendMessage.bind(this);
 		this.state = {messages: []};
 		
+		window.chatReset = ()=>{
+			Socket.emit("chat", {
+				action: "reset"
+			});
+		}
 		Socket.emit("chat", {action: "messages"});
 		Socket.on("chat", (data)=>{
 			switch(data.action) {

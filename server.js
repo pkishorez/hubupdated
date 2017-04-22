@@ -12,6 +12,9 @@ app.get('/', function (req, res) {
 app.get('/bundle/:value', function (req, res) {
     res.sendFile(req.params.value, { root: __dirname + "/bundle" });
 });
+app.get('/images/:value', function (req, res) {
+    res.sendFile(req.params.value, { root: __dirname + "/images" });
+});
 var messages = [];
 var message_id = 0;
 var users = [];
@@ -37,6 +40,9 @@ io.on('connection', function (socket) {
         io.sockets.emit('online', {
             users: users
         });
+    });
+    socket.on("presentation", function (data) {
+        io.sockets.emit("presentation", data);
     });
     socket.on('chat', function (data) {
         switch (data.action) {
