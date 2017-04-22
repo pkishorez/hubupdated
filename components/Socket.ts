@@ -13,6 +13,7 @@ Socket.emit("setUsername", userName);
 Socket.on("setUsername", function(error) {
 	userName = prompt("Invalid : "+error+". Enter another one : ");
 	localStorage.setItem('Name', userName);
+	document.title = userName;
 	Socket.emit("setUsername", userName);
 });
 export {
