@@ -1,0 +1,410 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/vendor/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/vendor/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/vendor/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/vendor/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/vendor/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/vendor/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/vendor/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/partial/_typography.scss */
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+/* line 6, ../sass/partial/_typography.scss */
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+/* line 11, ../sass/partial/_typography.scss */
+h3 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* line 16, ../sass/partial/_typography.scss */
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Won't be used here */
+/* line 23, ../sass/partial/_typography.scss */
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 28, ../sass/partial/_typography.scss */
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/* line 33, ../sass/partial/_typography.scss */
+b {
+  font-weight: 900;
+}
+
+/* line 37, ../sass/partial/_typography.scss */
+i {
+  font-style: italic;
+}
+
+/* line 4, ../sass/partial/_reset.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+/* line 12, ../sass/partial/_reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/partial/_reset.scss */
+input[type='text'], input[type='text']:focus, input[type='password'], input[type='password']:focus, textarea, textarea:focus {
+  border: 0px;
+  outline: 0px;
+  resize: none;
+}
+
+/* line 24, ../sass/partial/_reset.scss */
+a, a:active, a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 7, ../sass/helper/_flex.scss */
+.flexbox {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 16, ../sass/helper/_flex.scss */
+.flexbox.eq-width > * {
+  -webkit-flex: 1 1 0;
+  flex: 1 1 0;
+}
+/* line 20, ../sass/helper/_flex.scss */
+.flexbox.column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 23, ../sass/helper/_flex.scss */
+.flexbox.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 27, ../sass/helper/_flex.scss */
+.flexbox.justify-start {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+/* line 30, ../sass/helper/_flex.scss */
+.flexbox.justify-end {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 33, ../sass/helper/_flex.scss */
+.flexbox.justify-space-between {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 36, ../sass/helper/_flex.scss */
+.flexbox.justify-space-around {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+/* line 40, ../sass/helper/_flex.scss */
+.flexbox.align-start {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+/* line 43, ../sass/helper/_flex.scss */
+.flexbox.align-end {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+/* line 46, ../sass/helper/_flex.scss */
+.flexbox.align-stretch {
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+/* line 5, ../sass/component/_navbar.scss */
+.navbar {
+  position: absolute;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #198719;
+}
+/* line 13, ../sass/component/_navbar.scss */
+.navbar.fixed {
+  position: fixed;
+}
+/* line 17, ../sass/component/_navbar.scss */
+.navbar .content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-align-items: center;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  color: white;
+}
+/* line 25, ../sass/component/_navbar.scss */
+.navbar .content .logo {
+  cursor: pointer;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  letter-spacing: -px;
+  text-shadow: 0px 0px 10px white;
+  text-transform: uppercase;
+  padding: 7px;
+  font-size: 20px;
+}
+/* line 30, ../sass/component/_navbar.scss */
+.navbar .content .logo::first-letter {
+  font-size: 30px;
+}
+/* line 33, ../sass/component/_navbar.scss */
+.navbar .content .logo:hover {
+  background-color: #167916;
+}
+
+/* line 1, ../sass/component/_button.scss */
+.button, input[type='button'] {
+  position: relative;
+  padding: 7px;
+  margin: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  clear: both;
+  cursor: pointer;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -moz-transform: all 1s;
+  -ms-transform: all 1s;
+  -webkit-transform: all 1s;
+  transform: all 1s;
+}
+/* line 11, ../sass/component/_button.scss */
+.button:hover, input[type='button']:hover {
+  background-color: #E9E9E9;
+}
+/* line 15, ../sass/component/_button.scss */
+.button.clicked, input[type='button'].clicked {
+  background-color: green;
+  color: white;
+}
+
+/* line 3, ../sass/component/_form.scss */
+.form .label {
+  margin-top: 10px;
+  padding: 7px 0px;
+}
+/* line 7, ../sass/component/_form.scss */
+.form input[type='text'], .form input[type='password'], .form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #E8E8E8;
+  color: #146c14;
+  padding: 7px;
+}
+/* line 12, ../sass/component/_form.scss */
+.form input[type='text']:focus, .form input[type='password']:focus, .form textarea:focus {
+  border-bottom: 1px solid #595959;
+}
+/* line 16, ../sass/component/_form.scss */
+.form label.checkbox, .form label.radio {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 5px;
+}
+/* line 21, ../sass/component/_form.scss */
+.form label.checkbox:hover, .form label.radio:hover {
+  background-color: #F4F4F4;
+}
+/* line 25, ../sass/component/_form.scss */
+.form label.checkbox input[type='checkbox'], .form label.checkbox input[type='radio'], .form label.radio input[type='checkbox'], .form label.radio input[type='radio'] {
+  display: none;
+}
+/* line 29, ../sass/component/_form.scss */
+.form label.checkbox input[type='checkbox']:checked ~ .fake, .form label.checkbox input[type='radio']:checked ~ .fake, .form label.radio input[type='checkbox']:checked ~ .fake, .form label.radio input[type='radio']:checked ~ .fake {
+  background-color: #198719;
+}
+/* line 33, ../sass/component/_form.scss */
+.form label.checkbox input[type='radio'] ~ .fake, .form label.radio input[type='radio'] ~ .fake {
+  border-radius: 17px;
+}
+/* line 36, ../sass/component/_form.scss */
+.form label.checkbox .fake, .form label.radio .fake {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid black;
+  font-size: 15px;
+  color: white;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 2, ../sass/component/_card.scss */
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+  background-color: white;
+  padding: 10px;
+}
+
+/* line 7, ../sass/component/_card.scss */
+.card-1 {
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 11, ../sass/component/_card.scss */
+.card-2 {
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 15, ../sass/component/_card.scss */
+.card-3 {
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 19, ../sass/component/_card.scss */
+.card-4 {
+  -moz-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 23, ../sass/component/_card.scss */
+.card-5 {
+  -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* line 3, ../sass/helper/_utilities.scss */
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 17, ../sass/classui.scss */
+body {
+  padding: 0px 5px;
+  background-color: #F4FFF4;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 24, ../sass/classui.scss */
+.classui .mainContent {
+  margin: auto;
+}

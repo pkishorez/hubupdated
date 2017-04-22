@@ -1,0 +1,40 @@
+{
+  "name": "classui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "Kishore",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^7.0.13",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-motion": "^0.4.7",
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "redux": "^3.6.0",
+    "socket.io": "^1.7.3",
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/classnames": "0.0.32",
+    "@types/lodash": "^4.14.62",
+    "@types/react": "^15.0.21",
+    "@types/react-dom": "^0.14.23",
+    "@types/react-motion": "0.0.21",
+    "@types/react-redux": "^4.4.38",
+    "@types/react-router": "^4.0.3",
+    "@types/socket.io": "^1.4.29",
+    "@types/socket.io-client": "^1.4.29"
+  }
+}
